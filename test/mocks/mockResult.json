@@ -1,0 +1,236 @@
+{
+  "numTotalTestSuites": 6,
+  "numPassedTestSuites": 6,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 16,
+  "numPassedTests": 13,
+  "numFailedTests": 3,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "startTime": 1665917303725,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "getUncoveredLinesFromStatements()"
+          ],
+          "fullName": " getUncoveredLinesFromStatements() returns a single line range for only one untested line.",
+          "status": "failed",
+          "title": "returns a single line range for only one untested line.",
+          "duration": 7,
+          "failureMessages": [
+            "acc.at is not a function"
+          ],
+          "location": {
+            "line": 17,
+            "column": 27
+          }
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "getUncoveredLinesFromStatements()"
+          ],
+          "fullName": " getUncoveredLinesFromStatements() returns an empty array if only line is covered.",
+          "status": "passed",
+          "title": "returns an empty array if only line is covered.",
+          "duration": 2,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "getUncoveredLinesFromStatements()"
+          ],
+          "fullName": " getUncoveredLinesFromStatements() returns a linge range of 3 lines if all statements are uncovered.",
+          "status": "failed",
+          "title": "returns a linge range of 3 lines if all statements are uncovered.",
+          "duration": 0,
+          "failureMessages": [
+            "acc.at is not a function"
+          ],
+          "location": {
+            "line": 60,
+            "column": 27
+          }
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "getUncoveredLinesFromStatements()"
+          ],
+          "fullName": " getUncoveredLinesFromStatements() returns two line ranges if statements are interrupted by covered line.",
+          "status": "failed",
+          "title": "returns two line ranges if statements are interrupted by covered line.",
+          "duration": 1,
+          "failureMessages": [
+            "acc.at is not a function"
+          ],
+          "location": {
+            "line": 91,
+            "column": 27
+          }
+        }
+      ],
+      "startTime": 1665917305235,
+      "endTime": 1665917305245,
+      "status": "failed",
+      "message": "",
+      "name": "/workspaces/vitest-coverage-report-action/src/getUncoveredLinesFromStatements.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "generateSummaryTabelHtml"
+          ],
+          "fullName": " generateSummaryTabelHtml generates the headline",
+          "status": "passed",
+          "title": "generates the headline",
+          "duration": 5,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateSummaryTabelHtml"
+          ],
+          "fullName": " generateSummaryTabelHtml adds status blue-circle if no threshold provided.",
+          "status": "passed",
+          "title": "adds status blue-circle if no threshold provided.",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateSummaryTabelHtml"
+          ],
+          "fullName": " generateSummaryTabelHtml adds green-circle  if percentage is below threshold.",
+          "status": "passed",
+          "title": "adds green-circle  if percentage is below threshold.",
+          "duration": 0,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateSummaryTabelHtml"
+          ],
+          "fullName": " generateSummaryTabelHtml adds red-circle if percentage is below threshold.",
+          "status": "passed",
+          "title": "adds red-circle if percentage is below threshold.",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateSummaryTabelHtml"
+          ],
+          "fullName": " generateSummaryTabelHtml shows all categories",
+          "status": "passed",
+          "title": "shows all categories",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateSummaryTabelHtml"
+          ],
+          "fullName": " generateSummaryTabelHtml adds the percentage with a %-sign.",
+          "status": "passed",
+          "title": "adds the percentage with a %-sign.",
+          "duration": 0,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateSummaryTabelHtml"
+          ],
+          "fullName": " generateSummaryTabelHtml shows the covered / total numbers.",
+          "status": "passed",
+          "title": "shows the covered / total numbers.",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateSummaryTabelHtml"
+          ],
+          "fullName": " generateSummaryTabelHtml if threshold is given, provides the threshold in the percentage column.",
+          "status": "passed",
+          "title": "if threshold is given, provides the threshold in the percentage column.",
+          "duration": 0,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1665917305490,
+      "endTime": 1665917305499,
+      "status": "passed",
+      "message": "",
+      "name": "/workspaces/vitest-coverage-report-action/src/generateSummaryTableHtml.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "generateTableData"
+          ],
+          "fullName": " generateTableData returns no thresholds if config file can not be found.",
+          "status": "passed",
+          "title": "returns no thresholds if config file can not be found.",
+          "duration": 5,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateTableData"
+          ],
+          "fullName": " generateTableData returns no thresholds if non are provided in the config file",
+          "status": "passed",
+          "title": "returns no thresholds if non are provided in the config file",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateTableData"
+          ],
+          "fullName": " generateTableData reads all the thresholds from the given configuration file.",
+          "status": "passed",
+          "title": "reads all the thresholds from the given configuration file.",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "generateTableData"
+          ],
+          "fullName": " generateTableData sets thresholds to 100 if 100 property is true.",
+          "status": "passed",
+          "title": "sets thresholds to 100 if 100 property is true.",
+          "duration": 1,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1665917305617,
+      "endTime": 1665917305625,
+      "status": "passed",
+      "message": "",
+      "name": "/workspaces/vitest-coverage-report-action/src/parseCoverageThresholds.test.ts"
+    }
+  ]
+}
