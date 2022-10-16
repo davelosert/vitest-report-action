@@ -1,0 +1,26 @@
+name: 'Vitest Report'
+description: 'Provide a Vitest Test Report as Step-Summary and a comment in Pull Requests'
+author: 'David Losert'
+inputs:
+  github-token:
+      required: false
+      description: 'A github access token with permissions to write to issues. Uses secrets.GITHUB_TOKEN by default.'
+      default: ${{ github.token }}
+  vite-config-path:
+      required: false
+      description: 'The path to the vite config file. Uses "vite.config.js" by default.'
+      default: vite.config.js
+  json-report-path:
+      required: false
+      description: 'Path to an already existing report'
+      default: coverage/coverage-summary.json
+  working-directory:
+      required: false
+      description: 'Custom working directory'
+      default: ./
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+branding:
+  icon: 'check-circle'
+  color: 'green'
