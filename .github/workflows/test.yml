@@ -1,7 +1,9 @@
-## Write a GitHub Actions workflow to run this action on every pull-request
+name: Test Workflow
 
-name: Test
-on: [pull_request]
+on: 
+  - pull_request:
+      branches: [main]
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -12,4 +14,5 @@ jobs:
           node-version: 16
       - runs: npm install
       - runs: npm run test
+      - runs: npm run build
       - uses: ./
