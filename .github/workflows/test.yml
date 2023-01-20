@@ -1,8 +1,8 @@
 name: Test Workflow
 
 on: 
-  - pull_request:
-      branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   test:
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - runs: npm install
-      - runs: npm run test
-      - runs: npm run build
+      - run: npm install
+      - run: npm run test
+      - run: npm run build
       - uses: ./
